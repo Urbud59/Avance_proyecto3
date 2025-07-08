@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+    padding: 0;
+    width: 900PX;
+    margin: auto;
+    background: lightblue;
+    
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.top-nav {
+    text-align: right;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.top-nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+section {
+    padding: 20px;
+}
+
+.nosotros, .productos {
+    text-align: center;
+}
+
+.features, .product-types, .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.feature{
+    width: 30%;
+    min-width: 200px;
+}
+
+.feature-img,
+.producto-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.features,
+.product-types {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.feature,
+.producto {
+  max-width: 220px;
+}
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-top: 2px solid black;
+    background-color: lightblue;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+h2, h3 {
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin: 5px 0;
+}
+
+.content {
+    gap: 20px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: initial;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.video-wrapper {
+                max-width: 560px;
+                margin: auto;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            }
+            iframe {
+                width: 100%;
+                height: 315px;
+                border: none;
+            }
+
+.Electrodomestic {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.Card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card-list {
+  user-select: none;
+  list-style: none;
+  padding: 0;
+}
+
+.card-item {
+  background: white;
+  user-select: none;
+  padding: 18px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.card-item:hover {
+  border-color: #5372F0;
+}
+
+.card-link {
+  text-decoration: none;
+  display: block;
+  user-select: none;
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.badge {
+  color: #5372F0;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  background: #DDE4FF;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.badge.Electrodomesticos {
+    color:#B22485;
+    background:#F7DFF5; 
+}
+.badge.Productos de limpieza {
+    color:#B25A2B;
+    background:#FFE3D2; 
+}
+.badge.Muebles {
+    color:#205C20;
+    background:#D6F8D6; 
+}
+
+.card-title {
+  font-size: 1.19rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.card-button {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  color: #5372F0;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #5372F0;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-button:hover {
+  color: white;
+  background: #5372F0;
+}
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-wrapper,.swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #5372F0;
+}
+
+.card-wrapper,.swiper-pagination-bullet-active {
+    opacity: 1;
+    
+}
+.card-wrapper,.swiper-slide-button {
+    color: #5372F0;
+    margin-top: -35px;
+}
+
+#scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background: #333;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+#promo {
+      font-family: 'Roboto Slab',serif;
+      background: lightblue;
+      padding: 15px;
+      border-left: 5px solid green;
+      margin: 20px;
+}
+
+.top-nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      background-color: black;
+      margin:0;
+      width: 100%;
+    }
+    .top-nav ul a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+    }
+    .top-nav ul a:hover {
+      background-color: black;
+    }
+    
+ .feature, .producto {
+    background: lightblue;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid black;
+  margin: 20px 0;
+}
+
+.submenu {
+  position: relative;
+}
+
+#img-carrito {
+  width: 30px;
+  cursor: pointer;
+  filter: brightness(100);
+}
+
+#carrito {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 400px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color:black;
+}
+
+.submenu:hover #carrito {
+  display: block;
+}
+
+#lista-carrito {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+#lista-carrito th,
+#lista-carrito td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size:14px;
+}
+
+#lista-carrito img {
+  width: 50px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#vaciar-carrito {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: white;
+  border: 1px solid #999;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#vaciar-carrito:hover {
+  background: #f0f0f0;
+}
+
+#lista-carrito .eliminar {
+  background: red;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+nav ul {
+  position: relative;
+  z-index: 10;
+}
+
+.usuario-menu {
+    position: relative;
+}
+
+.usuario-menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* debajo del usuario */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px 0;
+    z-index: 100;
+    min-width: 140px;
+}
+
+.usuario-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.usuario-link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.usuario-menu .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* justo debajo */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 100;
+  min-width: 160px;
+}
+
+.usuario-menu .dropdown li {
+  list-style: none;
+}
+
+.usuario-menu .dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.usuario-menu .dropdown a:hover {
+  background-color: #f0f0f0;
+}
+
+.usuario-menu:hover .dropdown {
+  display: block;
+}
